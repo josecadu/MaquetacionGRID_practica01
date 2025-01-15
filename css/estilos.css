@@ -1,0 +1,95 @@
+/*Jose Manuel Cabrera Dueñas*/
+#Cambria{
+    font-family: Algerian, serif;
+    font-size: 1.5vw;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(5,100px);
+    grid-template-areas:
+    "head head head head"
+    "uno  uno  uno  aside"
+    "dos  dos  dos  aside"
+    "tres tres tres aside"
+    "pie  pie  pie  pie"
+    ;
+    margin: 20px auto;
+    width: 90%;
+}
+
+
+#uno{
+    grid-area: uno;
+    background-color: aqua;
+}
+#dos{
+    grid-area: dos;
+    background-color: yellow;
+}
+#tres{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(2,50%);
+    grid-template-areas:
+    "a b c "
+    "d  e  f "
+    ;
+    grid-area: tres;
+    background-color: red;
+    align-items: center;
+}
+#a{
+    margin: auto;
+    width: 80%;
+    height: 8vh;
+    grid-area: a;
+    background-color: hwb(140 0% 0%)
+}
+#b{
+    margin: auto;
+    width: 80%;
+    grid-area: b;
+    background-color: rgb(187, 185, 190);
+}
+#c{
+    margin: auto;
+    width: 80%;
+    grid-area: c;
+    background-color: rgb(255, 208, 0);
+}
+#d{
+    margin: auto;
+    width: 80%;
+    grid-area: d;
+    background-color: rgb(0, 255, 191);
+}
+#e{
+    margin: auto;
+    width: 80%;
+    grid-area: e;
+    background-color: rgb(0, 47, 255);
+}
+#f{
+    margin: auto;
+    width: 80%;
+    grid-area: f;
+    background-color: rgb(184, 154, 24);
+}
+header{
+    grid-area: head;
+    background-color: blue;
+}
+aside{
+    grid-area: aside ;
+    background-color: bisque;
+}
+footer{
+    grid-area: pie;
+    background-color: chartreuse;
+}
